@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Google's background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.container {
+    max-width: 600px; /* Set a max-width for better responsiveness */
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.header img {
+    height: 350px; /* Adjust the height as needed */
+   
+}
+
+#text-input {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #dfe1e5; /* Google's search box border color */
+    border-radius: 24px; /* Google's search box border radius */
+    outline: none;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4285f4; /* Google's search button color */
+    color: white;
+    border: none;
+    border-radius: 24px; /* Google's search button border radius */
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #357ae8; /* Google's search button hover color */
+}
+
+footer {
+    margin-top: 40px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Match the background color of the body */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 70%;
+}
+
