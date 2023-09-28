@@ -10,6 +10,15 @@ body {
     height: 80vh;
 }
 
+/* Displayed quotes */
+
+  
+  .quote {
+  font-style: italic;
+  padding-bottom: 10%;
+  }
+
+  
 .container {
     max-width: 600px; /* Set a max-width for better responsiveness */
     width: 100%;
@@ -21,12 +30,13 @@ body {
 }
 
 .header img {
-    height: 350px; /* Adjust the height as needed */
+    height: 300px; /* Adjust the height as needed */
    
 }
 
 #text-input {
     padding: 10px;
+    margin-top: 18px;
     width: 500px;
     border: 1px solid #dfe1e5; /* Google's search box border color */
     border-radius: 24px; /* Google's search box border radius */
