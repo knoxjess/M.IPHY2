@@ -11,14 +11,11 @@ body {
 }
 
 /* Displayed quotes */
+.quote {
+    font-style: italic;
+    padding-bottom: 10%;
+}
 
-  
-  .quote {
-  font-style: italic;
-  padding-bottom: 10%;
-  }
-
-  
 .container {
     max-width: 600px; /* Set a max-width for better responsiveness */
     width: 100%;
@@ -30,14 +27,15 @@ body {
 }
 
 .header img {
-    height: 300px; /* Adjust the height as needed */
-   
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #text-input {
     padding: 10px;
     margin-top: 18px;
-    width: 500px;
+    width: 80%; /* Adjusted width for better responsiveness */
+    max-width: 500px; /* Set a max-width for larger screens */
     border: 1px solid #dfe1e5; /* Google's search box border color */
     border-radius: 24px; /* Google's search box border radius */
     outline: none;
@@ -70,3 +68,9 @@ footer {
     font-size: 70%;
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    #text-input {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

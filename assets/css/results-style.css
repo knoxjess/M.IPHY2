@@ -2,6 +2,7 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Set a background color for the body */
@@ -13,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
 /* Navigation styles */
@@ -36,13 +37,14 @@ h1 {
 }
 
 img {
-    max-width: 20%;
+    max-width: 100%; /* Make images responsive */
     height: auto;
 }
 
 #text-input {
     padding: 10px;
-    width: 500px;
+    width: 80%; /* Adjusted width for better responsiveness */
+    max-width: 500px; /* Set a max-width for larger screens */
     border: 1px solid #dfe1e5; /* Google's search box border color */
     border-radius: 24px; /* Google's search box border radius */
     outline: none;
@@ -75,20 +77,20 @@ img {
     flex-direction: column;
     margin-top: 1vh;
     width: 90%;
-  }
-  
-  .wrapper {
-    display: inline-flex;
+}
+
+.wrapper {
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-  }
-  
-  .gif {
+}
+
+.gif {
     padding: 13pt 0;
-  }
-  
+}
+
 footer {
     margin-top: 40px;
     font-style: italic;
